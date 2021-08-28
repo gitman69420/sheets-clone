@@ -1,0 +1,30 @@
+$closed-width: 6rem;
+
+.column__body {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.column__header__body {
+  min-height: 1.5rem;
+  max-width: $closed-width;
+  display: flex;
+  align-items: center;
+}
+
+.column__type__select {
+  width: $closed-width;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  height: 1.5rem;
+  font-size: 1em;
+  option {
+    width: $closed-width;
+  }
+
+  &:after {
+    width: $closed-width;
+  }
+}

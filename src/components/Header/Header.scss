@@ -1,0 +1,12 @@
+$navbar_forward: 100;
+$black: black;
+
+.header__body {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  width:100%;
+  background-color: $black;
+  z-index: $navbar_forward;
+}

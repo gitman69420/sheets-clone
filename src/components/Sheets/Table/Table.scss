@@ -1,0 +1,22 @@
+$forward:50;
+
+.table__body {
+    position:relative;
+    top:4rem;
+}
+
+
+.index__flow {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left:0;
+    z-index:$forward;
+}
+
+.table__data__body{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    left:3rem;
+}

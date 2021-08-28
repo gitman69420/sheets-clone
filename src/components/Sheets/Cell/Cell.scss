@@ -1,0 +1,83 @@
+$closed-border-color: black;
+$open-border-color: rgb(37, 147, 184);
+$bg-color: white;
+
+$closed-height: 1.5rem;
+$closed-width: 6rem;
+
+$open-height: 6rem;
+$open-width: 9rem;
+
+$input-closed-height: 1rem;
+$input-closed-width: 6rem;
+
+$input-open-height: 6rem;
+$input-open-width: 9rem;
+
+$border-width: 0.1rem;
+
+$cell-font-size: 1em;
+
+$infront: 50;
+$backwards: 25;
+
+.cell__container{
+    max-height:$closed-height;
+    max-width:$closed-width;
+}
+
+.cell__body__closed {
+  height: $closed-height;
+  width: $closed-width;
+  border-style: solid;
+  border-width: $border-width;
+  border-color: $closed-border-color;
+  background-color: $bg-color;
+  padding: 0;
+  overflow: hidden;
+  z-index: $backwards;
+}
+
+.cell__body__open{
+  height: $open-height;
+  width: $open-width;
+  border-style: solid;
+  border-width: $border-width;
+  border-color: $open-border-color;
+  background-color: $bg-color;
+  padding: 0;
+  position: initial;
+  position:relative;
+  z-index: $infront;
+}
+
+.cell__input__closed {
+  height: $input-closed-height;
+  width: $input-closed-width;
+  resize: none;
+  margin: 0;
+  padding: 0;
+  font-size: $cell-font-size;
+  font-family: sans-serif;
+  border: none;
+  overflow: hidden;
+}
+
+.cell__input__open {
+  height: $input-open-height;
+  width: $input-open-width;
+  resize: none;
+  margin: 0;
+  padding: 0;
+  font-size: $cell-font-size;
+  font-family: sans-serif;
+  border: none;
+}
+
+.cell__input__open:focus {
+  outline: none;
+}
+
+.cell__input__closed:focus {
+  outline: none;
+}
