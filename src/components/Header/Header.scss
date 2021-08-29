@@ -1,18 +1,39 @@
 $navbar_forward: 100;
-$black: black;
+$blue:rgba(3, 110, 160, 0.685);
 
 .header__body {
   position: fixed;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  height: 4rem;
+  gap:1rem;
+  height: 5rem;
   width:100%;
-  background-color: $black;
+  background-color: $blue;
   z-index: $navbar_forward;
 }
 
 .header__action__box{
-  margin:0 2rem;
+  max-width: 9em;
+  margin:0 1rem;
   display: flex;
   flex-direction: column;
+  justify-self: end;
+}
+
+.button__click{
+  min-width:6rem;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+  text-align: center;
+  cursor: pointer;
+  padding:0 1rem;
+  margin-top:0.25rem;
+}
+
+.row__col__counter{
+  outline:none;
+  border-radius:1rem;
+  text-align: center;
 }
