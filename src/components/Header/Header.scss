@@ -10,3 +10,9 @@ $black: black;
   background-color: $black;
   z-index: $navbar_forward;
 }
+
+.header__action__box{
+  margin:0 2rem;
+  display: flex;
+  flex-direction: column;
+}

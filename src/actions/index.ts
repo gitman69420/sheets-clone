@@ -13,23 +13,22 @@ interface ITypePayload {
 interface IDataPayload {
     x: number,
     y: number,
-    data?: string | object | number | Date
+    data?: string | number 
 }
 
 // COUNT REDUCER ACTIONS
 
 // given no parameter while calling add row and column action, 
 // the default count will be 1
-const defaultCount: ICountPayload = { byCount: 1 };
 
-export const addColumn = (payload: ICountPayload = defaultCount) => (
+export const addColumn = (payload: ICountPayload = { byCount: 1 }) => (
     (dispatch: Dispatch) => dispatch({
         type: action.ADD_COLUMN,
         payload
     })
 )
 
-export const addRow = (payload: ICountPayload = defaultCount) => (
+export const addRow = (payload: ICountPayload = { byCount: 1 }) => (
     (dispatch: Dispatch) => dispatch({
         type: action.ADD_ROW,
         payload

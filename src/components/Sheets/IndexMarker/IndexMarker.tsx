@@ -2,12 +2,13 @@ import React from "react";
 
 import "../Cell/Cell.scss";
 
-const IndexMarker = (props: { index?: number }) => {
+const IndexMarker = (props: { index?: number, label?:string }) => {
 
     const style = {
         div: {
-            height: props.index ? "1.375rem" : "1.425rem",
-            width: "3rem",
+            height: props.index || props.label ? "1.375rem" : "1.425rem",
+            minWidth: "3rem",
+            maxWidth:"100%",
             backgroundColor: "black",
             color:"white",
             borderStyle: "solid",
@@ -15,7 +16,7 @@ const IndexMarker = (props: { index?: number }) => {
         },
         p: {
             minHeight: "1.4rem",
-            margin: "0 0 0 1rem",
+            margin: "0",
             padding: 0,
         }
     }
@@ -24,7 +25,7 @@ const IndexMarker = (props: { index?: number }) => {
         <div>
             <div style={style.div}>
                 <p style={style.p}>
-                    {`${props.index || "-"}`}
+                    {`${props.index || props.label || "Type"}`}
                 </p>
             </div>
         </div>

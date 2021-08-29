@@ -1,5 +1,5 @@
 $closed-border-color: black;
-$open-border-color: rgb(37, 147, 184);
+$open-border-color: rgb(86, 182, 48);
 $bg-color: white;
 
 $closed-height: 1.5rem;
@@ -42,7 +42,7 @@ $backwards: 25;
   height: $open-height;
   width: $open-width;
   border-style: solid;
-  border-width: $border-width;
+  border-width: calc($border-width + 1px);
   border-color: $open-border-color;
   background-color: $bg-color;
   padding: 0;

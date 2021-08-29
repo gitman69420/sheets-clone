@@ -20,3 +20,16 @@ $forward:50;
     position:relative;
     left:3rem;
 }
+
+.add__column__button{
+    height:1.5rem;
+}
+
+.bottom__gap{
+    min-height:5rem;
+    width: 100%;
+    color:white;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}

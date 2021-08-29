@@ -19,7 +19,7 @@ export default (state = initialState, action: IAction) => {
         case ADD_DATA:
             return [...state, action.payload];
         case EDIT_DATA:
-            return state.filter((item) => { if (item.x === action.payload.x && item.y === action.payload.y) return action.payload.data });
+            return state.filter((item) => { if (item.x === action.payload.x && item.y === action.payload.y) return action.payload});
         case REMOVE_DATA:
             return state.filter((item) => { return (item.x !== action.payload.x && item.y !== action.payload.y) });
         default:
