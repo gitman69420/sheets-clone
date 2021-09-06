@@ -65,8 +65,8 @@ const Table = () => {
                 {[...Array(row_col.columns)].map((value: undefined, index: number) => <Column key={index} type={"string"} y={index} />)}
                 <AddColumnButton />
             </div>
-            <div className={"bottom__gap"} style={{fontFamily:"Consolas"}}>
-                {"created by Sridhar Mugundan - 18BCE2314"}
+            <div className={"bottom__gap"} style={{ fontFamily: "Consolas" }}>
+                <a style={{ color: "lightblue" }} href="https://github.com/gitman69420"> Checkout my GitHub</a>
             </div>
         </div>
     </>

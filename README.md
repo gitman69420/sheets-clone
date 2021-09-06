@@ -1,11 +1,6 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Sridhar Mugundan - 18BCE2314
-
-Demo Video Link: https://youtu.be/ShutEmlq-3M 
-(sorry for poor video quality)
-
 Dependancies used:
 + React
 + Typescript and types for all libraries

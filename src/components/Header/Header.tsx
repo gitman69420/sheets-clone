@@ -40,7 +40,7 @@ const Header: React.FC = () => {
     return <>
         <div className="header__body">
             <div style={{marginLeft:"1rem"}}>
-                <h1 style={style1}>Work Together</h1>
+                <h1 style={style1}>Sheets clone (w/ type)</h1>
                 <h5 style={style2}>(a Google Sheets clone - Sridhar Mugundan)</h5>
             </div>
             <div className={"header__action__box"}>
